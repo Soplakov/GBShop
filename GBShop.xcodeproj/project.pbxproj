@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		654E832C29510ADC008AC082 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E832B29510ADC008AC082 /* AppDelegate.swift */; };
 		654E832E29510ADC008AC082 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E832D29510ADC008AC082 /* SceneDelegate.swift */; };
-		654E833029510ADC008AC082 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E832F29510ADC008AC082 /* ViewController.swift */; };
-		654E833329510ADC008AC082 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 654E833129510ADC008AC082 /* Main.storyboard */; };
 		654E833529510ADC008AC082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 654E833429510ADC008AC082 /* Assets.xcassets */; };
 		654E833829510ADC008AC082 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 654E833629510ADC008AC082 /* LaunchScreen.storyboard */; };
 		654E834329510ADC008AC082 /* GBShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E834229510ADC008AC082 /* GBShopTests.swift */; };
@@ -39,8 +37,6 @@
 		654E832829510ADC008AC082 /* GBShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		654E832B29510ADC008AC082 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		654E832D29510ADC008AC082 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		654E832F29510ADC008AC082 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		654E833229510ADC008AC082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		654E833429510ADC008AC082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		654E833729510ADC008AC082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		654E833929510ADC008AC082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,13 +95,14 @@
 		654E832A29510ADC008AC082 /* GBShop */ = {
 			isa = PBXGroup;
 			children = (
-				654E832B29510ADC008AC082 /* AppDelegate.swift */,
-				654E832D29510ADC008AC082 /* SceneDelegate.swift */,
-				654E832F29510ADC008AC082 /* ViewController.swift */,
-				654E833129510ADC008AC082 /* Main.storyboard */,
-				654E833429510ADC008AC082 /* Assets.xcassets */,
-				654E833629510ADC008AC082 /* LaunchScreen.storyboard */,
-				654E833929510ADC008AC082 /* Info.plist */,
+				6591EE482952053A004C3EF3 /* App */,
+				6591EE49295205B9004C3EF3 /* BusinessLogic */,
+				6591EE50295206C5004C3EF3 /* Entity */,
+				6591EE4B29520600004C3EF3 /* Assembly */,
+				6591EE4C29520616004C3EF3 /* Flows */,
+				6591EE4D29520643004C3EF3 /* Core */,
+				6591EE4E2952064C004C3EF3 /* Resources */,
+				6591EE4F29520676004C3EF3 /* Environments */,
 			);
 			path = GBShop;
 			sourceTree = "<group>";
@@ -125,6 +122,67 @@
 				654E834E29510ADC008AC082 /* GBShopUITestsLaunchTests.swift */,
 			);
 			path = GBShopUITests;
+			sourceTree = "<group>";
+		};
+		6591EE482952053A004C3EF3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				654E832B29510ADC008AC082 /* AppDelegate.swift */,
+				654E832D29510ADC008AC082 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6591EE49295205B9004C3EF3 /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		6591EE4B29520600004C3EF3 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		6591EE4C29520616004C3EF3 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		6591EE4D29520643004C3EF3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6591EE4E2952064C004C3EF3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				654E833629510ADC008AC082 /* LaunchScreen.storyboard */,
+				654E833429510ADC008AC082 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6591EE4F29520676004C3EF3 /* Environments */ = {
+			isa = PBXGroup;
+			children = (
+				654E833929510ADC008AC082 /* Info.plist */,
+			);
+			path = Environments;
+			sourceTree = "<group>";
+		};
+		6591EE50295206C5004C3EF3 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +291,6 @@
 			files = (
 				654E833829510ADC008AC082 /* LaunchScreen.storyboard in Resources */,
 				654E833529510ADC008AC082 /* Assets.xcassets in Resources */,
-				654E833329510ADC008AC082 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +315,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				654E833029510ADC008AC082 /* ViewController.swift in Sources */,
 				654E832C29510ADC008AC082 /* AppDelegate.swift in Sources */,
 				654E832E29510ADC008AC082 /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +353,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		654E833129510ADC008AC082 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				654E833229510ADC008AC082 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		654E833629510ADC008AC082 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -454,7 +502,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -482,7 +530,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
